@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.main-body {
+
+  height: 100vh;
+  min-height: 640px;
+  background: linear-gradient(150deg, #DF98FA, #9055FF);
+  background-image: url(https://www.vinosycaminos.com/images/showid2/2595010?w=1200&zc=4);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  flex-direction: column;
+}
+
+.main-heading {
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  font-size: larger;
+  font-family: 'Roboto', Times, serif;
+  position: absolute;
+  top: 2rem;
+  background: linear-gradient(270.97deg, #FFE580 -21.36%, #FF7571 -2.45%, #EA5DAD 26.84%, #C2A0FD 64.15%, #3BF0E4 108.29%, #B2F4B6 159.03%);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.main-form {
+  font-family: 'Roboto', Times, serif;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  color: cornsilk;
+  border-radius: 8px;
+  box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.5);
+  animation: formGlow 2s infinite alternate;
+  border: solid 2px white;
+  transition: all 0.6s ease;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.main-form input {
+  width: 100%;
+}
+
+.main-form:hover {
+  transform: scale(1.1);
+}
+
+input[type="email"] {
+  border: none;
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 1rem 0;
+  outline: none;
+  background: linear-gradient(270.97deg, #FFE580 -21.36%, #FF7571 -2.45%, #EA5DAD 26.84%, #C2A0FD 64.15%, #3BF0E4 108.29%, #B2F4B6 159.03%);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+input[type="email"]::placeholder {
+  color: black;
+}
+
+input[type="email"]:focus {
+  border: 2px solid hotpink;
+}
+
+#sub-btn {
+  border: none;
+  padding: 8px 10px;
+  font-weight: bold;
+  border-radius: 6px;
+  float: right;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  background: linear-gradient(200deg, rgb(7, 208, 235), rgb(7, 235, 75));
+  cursor: pointer;
+}
+
+#sub-btn:active {
+  background: linear-gradient(20deg, rgb(112, 198, 238), rgb(181, 117, 255));
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.main-body .sdg-container {
+  position: absolute;
+  bottom: 4rem;
+  backdrop-filter: blur(1px);
+  display: flex;
+  border: solid 2px white;
+  border-radius: 8px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.box {
+  padding: 8px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  display: flex;
+  transition: all 0.6s ease-in-out;
+}
+
+.box img {
+  height: 6rem;
+  border-radius: 8px;
+  width: 9rem;
+}
+
+.box:hover {
+  transform: translateY(-40%);
+}
+
+#msg {
+  position: absolute;
+  top: 20%;
+  background-color: rgba(255, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  border: 2px solid;
+  padding: 8px;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 6px;
+  z-index: 1;
+  display: none;
+}
+
+@media screen and (max-width: 440px) {
+  .box img {
+    height: 5rem;
+  }
+
+  /* .main-body .sdg-container {
+      position: absolute;
+      margin-top: 3rem;
+  } */
+}
+
+@media screen and (max-height: 639px) {
+  .main-body .sdg-container {
+    display: none;
+  }
+}
+
+@keyframes formGlow {
+  from {
+    box-shadow: 0 0 40px 1px rgba(0, 0, 0, 0.5);
+  }
+
+  to {
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+  }
+}
