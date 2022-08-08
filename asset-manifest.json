@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/beauty-landing-page/static/css/main.0adba093.css",
+    "main.js": "/beauty-landing-page/static/js/main.ef1e5da6.js",
+    "static/js/787.75a89cb9.chunk.js": "/beauty-landing-page/static/js/787.75a89cb9.chunk.js",
+    "index.html": "/beauty-landing-page/index.html",
+    "main.0adba093.css.map": "/beauty-landing-page/static/css/main.0adba093.css.map",
+    "main.ef1e5da6.js.map": "/beauty-landing-page/static/js/main.ef1e5da6.js.map",
+    "787.75a89cb9.chunk.js.map": "/beauty-landing-page/static/js/787.75a89cb9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0adba093.css",
+    "static/js/main.ef1e5da6.js"
+  ]
+}
